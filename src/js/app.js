@@ -1,12 +1,29 @@
 const sliderImgs = document.querySelectorAll(".header__img");
 const sliderBtns = document.querySelectorAll(".header__slider-nav-item");
 const ratingWrapper = document.querySelectorAll(".catalog__rating-wrapper");
-
-console.log(sliderImgs, sliderBtns);
+const catalogMenuBtns = document.querySelectorAll(".catalog .menu__item");
+const catalogCards = document.querySelectorAll(".catalog__card");
 
 sliderBtns.forEach((btn, i) => {
   btn.addEventListener("click", (e) => changeSlide(e, i));
 });
+
+catalogMenuBtns.forEach((btn) => {
+  btn.addEventListener("click", filterCatalog);
+});
+
+function filterCatalog(event) {
+  catalogMenuBtns.forEach((btn) => btn.classList.remove("menu__item--active"));
+  event.target.classList.add("menu__item--active");
+
+  sortCatalog(event.target.innerText);
+}
+
+function sortCatalog(filter) {
+  catalogCards.forEach((card) => {
+    card.children[0].classList.toggle("catalog__img-box--filter");
+  });
+}
 
 const startsMarkup = `
 <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
