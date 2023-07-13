@@ -9,3 +9,23 @@
 .u-flex-aic {
   align-items: center;
 }
+
+.u-grid {
+  display: grid;
+}
+
+.u-grid-col-2 {
+  grid-template-columns: 73rem 1fr;
+}
+
+.u-grid-acc {
+  align-content: center;
+}
+
+.u-h-100 {
+  height: 100%;
+}
+
+.u-col-gap-9 {
+  column-gap: 9rem;
+}
