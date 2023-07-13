@@ -8,6 +8,28 @@
   font-weight: 400;
   letter-spacing: 1.26px;
   text-transform: uppercase;
+  text-align: center;
   color: $color-primary;
   text-decoration: none;
+
+  &--center {
+    margin: 0 auto;
+    padding: 2.5rem 6rem;
+    width: 38rem;
+  }
+
+  &--white {
+    background-color: #fff;
+    padding: 2.2rem 9.5rem;
+    width: 27rem;
+    height: 6.5rem;
+    color: $color-primary;
+    z-index: 1;
+  }
+
+  &--transparent {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+  }
 }

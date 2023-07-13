@@ -1,0 +1,39 @@
+.promo {
+  background-color: $color-grey-4;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 12rem 3.5rem;
+  &__card {
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__img {
+  }
+
+  &__content {
+  }
+
+  &__link {
+    display: block;
+    width: 24rem;
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    color: $color-primary;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1.12px;
+  }
+}

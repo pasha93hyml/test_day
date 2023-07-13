@@ -1,0 +1,69 @@
+.subscribe {
+  padding: 6.9rem 0 7rem;
+
+  &__heading {
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    max-width: 61.5rem;
+    margin-right: 6.2rem;
+  }
+
+  &__social {
+    font-size: 5.5rem;
+    width: 13rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+  }
+
+  &__social-link:link,
+  &__social-link:visited {
+    color: $color-grey;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    height: 7.3rem;
+
+    & input[type="tel"] {
+      width: 45.3rem;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::before {
+        content: url("../../icons/phone.svg");
+        fill: $color-grey;
+        z-index: 5;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4.2rem;
+      }
+
+      &::placeholder {
+        color: $color-grey;
+        font-family: inherit;
+        font-size: 2.4rem;
+        font-weight: 400;
+        letter-spacing: 1.68px;
+      }
+    }
+
+    & button[type="button"] {
+      cursor: pointer;
+      background-color: $color-primary;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1.26px;
+    }
+  }
+}
