@@ -57,3 +57,9 @@ function changeSlide(event, i) {
   sliderBtns[i].classList.add("header__slider-nav-item--active");
   sliderImgs[i].classList.add("header__img--active");
 }
+
+const element = document.querySelector('input[type="tel"]');
+const maskOptions = {
+  mask: "+{38}(000)000-00-00",
+};
+const mask = IMask(element, maskOptions);

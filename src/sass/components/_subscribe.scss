@@ -27,37 +27,24 @@
     display: flex;
     justify-content: center;
     height: 7.3rem;
+    position: relative;
 
     & input[type="tel"] {
       width: 45.3rem;
+      padding: 2.2rem 9rem 2.2rem 6.6rem;
       position: relative;
+      color: $color-grey;
+      font-family: inherit;
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 1.68px;
 
       &:focus {
         outline: none;
       }
-
-      &::before {
-        content: url("../../icons/phone.svg");
-        fill: $color-grey;
-        z-index: 5;
-        width: 2.4rem;
-        height: 2.4rem;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 4.2rem;
-      }
-
-      &::placeholder {
-        color: $color-grey;
-        font-family: inherit;
-        font-size: 2.4rem;
-        font-weight: 400;
-        letter-spacing: 1.68px;
-      }
     }
 
-    & button[type="button"] {
+    & button[type="submit"] {
       cursor: pointer;
       background-color: $color-primary;
       color: #fff;

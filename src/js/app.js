@@ -60,6 +60,6 @@ function changeSlide(event, i) {
 
 const element = document.querySelector('input[type="tel"]');
 const maskOptions = {
-  mask: "+{38}(___)___-__-__",
+  mask: "+{38}(000)000-00-00",
 };
 const mask = IMask(element, maskOptions);
